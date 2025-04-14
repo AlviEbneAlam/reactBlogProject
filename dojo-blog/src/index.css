@@ -114,7 +114,7 @@
 .create {
   max-width: 600px;
   margin: 40px auto;
-  background-color: rgba(241, 53, 109, 0.1); /* soft background */
+  background-color: rgba(241, 53, 109, 0.1); 
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -183,8 +183,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #f1356d;
-  box-shadow: 0 0 8px rgba(241, 53, 109, 0.4);
+  border-color: #f34d7e;
+  /* box-shadow: 0 0 8px rgba(209, 32, 90, 0.8); */
   outline: none;
 }
 
@@ -222,3 +222,12 @@ button:active {
 form {
   animation: fadeIn 0.6s ease-in-out;
 }
+
+
+input:focus,
+textarea:focus,
+select:focus {
+  transform: translateY(-4px); /* This makes it float up */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+

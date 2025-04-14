@@ -1,0 +1,13 @@
+# Ignore node_modules and package files in dojo-blog
+dojo-blog/node_modules/
+dojo-blog/package-lock.json
+dojo-blog/package.json
+
+# Ignore node_modules and package files in backend
+backend/node_modules/
+backend/package-lock.json
+backend/package.json
+
+.vscode/
+
+.gitignore/

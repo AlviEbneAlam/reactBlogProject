@@ -6,6 +6,8 @@
   font-family: "Quicksand";
   color: #333;
 }
+
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -108,4 +110,115 @@
   display: flex;
   align-items: center;
 
+}
+.create {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: rgba(241, 53, 109, 0.1); /* soft background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.create h2 {
+  margin-bottom: 20px;
+  color: #f1356d;
+  font-size: 28px;
+  text-align: center;
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.create input,
+.create textarea,
+.create select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.create textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create button {
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create button:hover {
+  background-color: #d1205a;
+}
+
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #f1356d;
+  box-shadow: 0 0 8px rgba(241, 53, 109, 0.4);
+  outline: none;
+}
+
+button {
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #d72d5a;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  animation: fadeIn 0.6s ease-in-out;
 }
